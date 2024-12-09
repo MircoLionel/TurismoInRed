@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 2rem;
+    background-color: darkgray;
+}
+.logo{
+  max-width: 7rem;
+}
+.lista {list-style: none; 
+  display: flex;
+  gap: 1rem; 
+}
+.navegador li a {
+  text-decoration: none;
+  color: black;
+}
+    

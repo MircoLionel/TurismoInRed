@@ -13,12 +13,15 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+
 main {
   width: 100%;
   padding: 20px;
   margin: auto;
   margin-top: 100px;
 }
+
 .c {
  max-width: 700px;
  max-height: 700px;
