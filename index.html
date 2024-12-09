@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home| Welcome Group</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="StyleIndex.css">
-</head>
 <body>
     <header>
         <img class="logo" src="./img/Logo_WelcomeGroup_Sin fondo.png" alt="Logo" >
-        <nav class="navegador">
+        <button class="menu" id="menu"><i class="bi bi-list"></i></button>
+        <nav class="navegador" id="navegador">
+            <button class="cierre" id="cierre"><i class="bi bi-x-lg"></i></button>
             <ul class="lista">
                 <li><a href="active">Inicio</a></li>
                 <li><a href="destinos">Destinos</a></li>
                 <li><a href="contact">Contacto</a></li>
-                <li><a href="login">Acceso agencia</a></li>
+                <li><a href="./start.php">Acceso agencia</a></li>
             </ul>
         </nav>
     </header>
+
+    <script src="./scriptsIndex.js"></script>
 </body>
 </html>

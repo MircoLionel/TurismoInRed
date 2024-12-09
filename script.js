@@ -59,3 +59,4 @@ function register (){
     caja_trasera_login.style.opacitity="1";
     }
 }
+
