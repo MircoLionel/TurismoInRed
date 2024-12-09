@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(./img/istockphoto-187230032-2048x2048.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+main {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+.c {
+ max-width: 700px;
+ max-height: 700px;
+ margin: auto;
+ position: absolute;
+}
+
+.contenedor__todo{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+
+}
+.caja__trasera{
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 128, 255, 0.1);
+}
+.caja__trasera div{
+  margin: 100px 40px;
+  color: white;
+  transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+  margin-top: 30px;
+}
+.caja__trasera div h3{
+  font-weight: 400;
+  font-size: 25px;
+
+}
+.caja__trasera button{
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 300ms;
+
+}
+.caja__trasera button:hover{
+  background:#fff;
+  color: #46A2FD;
+}
+
+.formulario__login-register{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+  transition: left 600ms cubic-bezier(0.175,0.885,0.320, 1.275);
+}
+.formulario__login-register form{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: white;
+  position: absolute;
+  border-radius: 20px;
+}
+.formulario__login-register form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color:#46A2FD;
+
+}
+.formulario__login-register form input{
+  width: 100%;
+  margin-top: 20px; 
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+
+.formulario__login-register form button{
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background-color: #46A2FD;
+  color: white;
+  cursor: pointer;
+  outline: none;  
+}
+
+.formulario__login{
+  opacity: 1;
+  display: block; 
+}
+.formulario__register{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+  main{
+    margin-top: 50px;
+  }
+  .caja__trasera{
+    max-width: 350px ;
+    height: 300px;
+    margin: auto;
+    flex-direction: column;
+  }
+  .caja__trasera div{
+    margin: 0px;
+    position: absolute;
+
+  }
+
+  .formulario__login-register{
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+  .formulario__login-register form{
+    position: relative;
+  }
+  
+}
+.bodyUsuario{
+  display: flex;
+  justify-content: center;
+  
+}
+.container{
+  position: relative; 
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 8%;
+}
+.container .card{
+  width: 330px;
+  position: relative;
+  height: 400px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  margin: 10px 10px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 10px ;
+  transition: 0.5s ease-in-out;
+  margin-top: 5%;
+}
+.container .card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0.5px 10px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.container .card .imgbx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top:10px;
+  left: 20px;
+  
+}
+.container .card .imgbx img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.insc{
+  background-image: url(img/gettyimages-474690025-2048x2048.jpg);
+  background-size: cover;
+  min-height: 100vh
+}
+.form{
+  background-color: transparent;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+.inscc{
+  background-image: url(img/pencils-1486278_1280.jpg);
+  background-size: cover;
+  min-height: 100vh
+}
+.formm{
+  color: whitesmoke;
+  background-color: transparent;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+.formm input{
+  background:gray
+}
+.insccc{
+  position: relative;
+  margin: 20 20;
+  width: 400px;
+  height: auto;
+  
+}
+.formmm{
+  color: whitesmoke;
+  background-color: transparent;
+  margin: 10;
+  width: 400px;
+  height: auto;
+  padding: 4.5em 3em;
+  box-shadow: 0 5px 10px -5px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+ 
+}
+.tabla{
+  width:100%;
+  padding: 4.5em 3em;
+  color: white;
+  position: relative;
+  flex-direction: row;
+
+  
+}
+.administracion{
+  background-image: url(./img/pencils-1486278_1280.jpg);
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  display: flex;
+
+}
+.tabla td{
+  position: relative;
+  color: white;
+  width:auto ;
+  padding: 20px;
+  flex-direction: row;
+}
+.tabla th{
+  color:lightseagreen;
+  flex-direction: row;
+
+  
+}
