@@ -10,7 +10,7 @@ include 'conexion.php';
 
 if (isset($_POST['check1'])) {
     $nombreEscuela = trim($_POST['nombreEscuela']);
-    $nombre = trim($_POST['nombre']);
+    
     $apellido = trim( $_POST['apellido']);
     $dni = trim($_POST['dni']);
     $fecDeNac = $_POST['fecDeNac'];
@@ -37,21 +37,24 @@ if (isset($_POST['check2'])) {
     $cla = trim($_POST['clave']);
     $cla =hash('sha512',$cla);
     $email = trim($_POST['email']);
-    $registrar = "INSERT usuarios(usuario, clave, email) VALUES ('$usu','$cla','$email')";
+    $nroLegajo =trim($_POST['nroLegajo']);
+    $nombreUsu = trim($_POST['nombreUsu']);
+    $apellidoUsu = trim( $_POST['apellidoUsu']);
+    $registrar = "INSERT usuarios(usuario, clave, email, Nombre, Apellido, NroLegajo) VALUES ('$usu','$cla','$email','$nombreUsu','$apellidoUsu','$nroLegajo')";
     $verificarMail =mysqli_query($conexion, "SELECT * FROM usuarios WHERE email = '$email'");
    
     if (mysqli_num_rows($verificarMail) > 0){
         echo '<script>alert("El mail ya esta registrado");
-                window.location ="index.php";
+                window.location ="SeccionEmp.php";
                 </script>
                 ';
     
         exit();
     }
-    $verificarUsuario =mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usu' ");
+    $verificarUsuario =mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usu'");
     if (mysqli_num_rows($verificarUsuario) > 0){
         echo '<script>alert("El usuario ya esta registrado");
-                window.location ="index.php";
+                window.location ="SeccionEmp.php";
                 </script>
                 ';
     

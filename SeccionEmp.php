@@ -40,11 +40,14 @@
                     <input type="password" name="contraseña" placeholder="Contraseña" maxlength="8"require>
                     <button>Entrar</button>
                 </form>
-                <form id="loguin" name="loguin" method="post" action ="index.php" class="formulario__register" >
+                <form id="loguin" name="loguin" method="post" action ="SeccionEmp.phpm" class="formulario__register" >
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Usuario" name="usuario" maxlength="10" autofocus require>
                     <input type="email" placeholder="Correo Electronico" name="email" maxlength="40" require>
                     <input type="password" placeholder="Contraseña" name="clave"maxlength="10" require>
+                    <input type="nombreUsu" placeholder="Nombre" name="nombreUsu"maxlength="20" require>
+                    <input type="apellido" placeholder="Apellido" name="apellido"maxlength="20" require>
+                    <input type="nroLegajo" placeholder="Numero de Legajo" name="nroLegajo"maxlength="20" require>
                     <button name="check2">Registrarse</button>
                 </form>
             </div>
