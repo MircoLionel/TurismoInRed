@@ -5,6 +5,7 @@ header {
     padding: 2rem;
     background-color: rgb(54, 54, 54);
 }
+
 .logo{
   max-width: 8rem;
 }
@@ -25,6 +26,19 @@ header {
   display: none;
   color: #cecece;
 
+}
+.wpp{
+  color: rgb(8, 232, 8);
+}
+
+#whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+}
+svg {
+  width: 60px;
+  filter: drop-shadow(0 1px 4px rgba(32, 252, 12, ));
 }
 
 @media screen and (max-width: 600px) {
@@ -49,9 +63,8 @@ header {
     background-color: black;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .6);
-  } 
-
-
+  }
+  
   
   .navegador.visible{
     opacity: 1;
@@ -63,3 +76,4 @@ header {
   }
   
 }
+
