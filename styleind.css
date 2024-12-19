@@ -4,7 +4,7 @@ header {
     align-items: center;
     justify-content: space-between ;
     padding: 2rem;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(185, 185, 185);
 }
 
 .logo{
@@ -19,8 +19,13 @@ header {
 }
 .navegador li a {
   text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
+  color:white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.navegador li a:hover{
+  color: rgb(0, 0, 0);
+  transition: ease 0.3s;
 }
 .menu,
 .cierre{
@@ -28,15 +33,67 @@ header {
   color: #cecece;
 
 }
-svg {
+svg{
+  color: rgb(5, 189, 5);
   width: 60px;
   filter: drop-shadow(0 1px 4px rgba(32, 252, 12, ));
+  
 }
 #whatsapp {
   position: fixed;
   bottom: 20px;
   right:20px;
+  text-decoration: none;
+  color: chartreuse;
 }
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding-top:   20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer .logo {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .logo img {
+  max-width: 150px;
+}
+
+
+.footer .info {
+  flex: 2;
+  text-align: center;
+  margin: 20px 0;
+  padding:30px 50px;
+}
+
+.footer .contact {
+  flex: 1;
+  text-align: center;
+}
+
+.footer p, .footer h4 {
+  margin: 5px 0;
+}
+
+.copyright-footer{
+  height: 100%;
+  display: block;
+  text-align: center;
+  background-color:#333;
+  color: white;
+  padding: 0;
+ 
+}
+
 @media screen and (max-width: 600px) {
   .menu, .cierre {
     display: block;
@@ -46,7 +103,7 @@ svg {
     cursor: pointer;
 
   }
-  .navegador { opacity: 0;
+  .navegador { 
     visibility: hidden;
     position: absolute;
     display: flex;
@@ -70,7 +127,10 @@ svg {
     flex-direction: column;
     align-items: end;
   }
-  
+  .footer .logo, .footer .info, .footer .contact {
+    flex: 100%;
+    text-align: center;
+}
 }
 
 
