@@ -40,7 +40,7 @@
                     <input type="password" name="contraseña" placeholder="Contraseña" maxlength="8"require>
                     <button>Entrar</button>
                 </form>
-                <form id="loguin" name="loguin" method="post" action ="SeccionEmp.phpm" class="formulario__register" >
+                <form id="loguin" name="loguin" method="post" action ="SeccionEmp.php" class="formulario__register" >
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Usuario" name="usuario" maxlength="10" autofocus require>
                     <input type="email" placeholder="Correo Electronico" name="email" maxlength="40" require>
