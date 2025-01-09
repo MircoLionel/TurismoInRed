@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formas de pago| Welcome Group</title>
+    <title>Contacto| Welcome Group</title>
     <link rel="stylesheet" href="./styleind.css">
+    <link rel="stylesheet" href="./styledest.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 <body>
     <header>
         <img class="logo" src="./img/Logo_WelcomeGroup_Sin fondo.png" alt="Logo" >
@@ -15,12 +19,38 @@
             <button class="cierre" id="cierre"><i class="bi bi-x-lg"></i></button>
             <ul class="lista">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="destinos">Destinos</a></li>
-                <li><a href="contact">Contacto</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./img/3DATOS-BANCARIOS.docx-3.pdf">Formas de pago</a></li>
                 <li><a href="./SeccionEmp.php">Acceso agencia</a></li>
             </ul>
         </nav>
     </header>
+
+    <form action="https://formsubmit.co/mircofermani@gmail.com" method="POST">
+        <h2 class="tit-form">Contacto</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+        
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" row="5"placeholder="Mensaje"></Textarea>
+
+            <div class="form-txt">
+                <a href="">Politica de privacidad</a>
+                <a href="">Terminos y condiciones</a>
+            </div>
+
+            <input class="btn" type="submit"  value="Enviar">
+        </div>
+    </form>   
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <div id="whatsapp">
         <a href="https://wa.me/5493469692626" target="_blank">
