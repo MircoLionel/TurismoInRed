@@ -34,7 +34,7 @@
 
 
             <div class="formulario__login-register">
-                <form action="start.php" method="post"  class="formulario__login">
+                <form action="usuarios.php" method="post"  class="formulario__login">
                     <h2>Iniciar sesion</h2>
                     <input type="text" name="usuario" placeholder="Usuario" maxlength="10" require autofocus>
                     <input type="password" name="contraseña" placeholder="Contraseña" maxlength="8"require>
